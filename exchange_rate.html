@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Курс валют — Евро (EUR)</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="rate.js"></script>
+  <link rel="icon" href="favicon-16x16.png">
+  <style>
+   body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: grey;
+    color: #333;
+    padding-right: 220px;
+    margin: 0;
+  }
+    h1 { color: whitesmoke; text-align: center; }
+    .converter, .chart-container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    label { display: block; margin: 10px 0 5px; }
+    input { width: 80%; padding: 8px; font-size: 16px; }
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    #result { font-weight: bold; margin-top: 10px; }
+    canvas { margin-top: 30px; }
+    .highlight { background: #e6f7ff; padding: 10px; border-left: 4px solid #005baa; margin-top: 10px; }
+    .side-menu {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 220px;
+      height: 100%;
+      background-color: rgb(80, 78, 78);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding-top: 20px;
+      box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .side-menu a {
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    .side-menu a:hover {
+        background-color: rgb(170, 170, 11);
+    }
+    .side-menu .active {
+        background-color: rgb(190, 190, 10);
+    }
+ a {
+      color: rgb(248, 248, 8);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: whitesmoke;
+    }
+  body {
+    padding-right: 220px;
+  }
+  </style>
+</head>
+<body>
+
+  <h1>Курс валют: Евро (EUR)</h1>
+
+  <div class="converter">
+    <h2>Калькулятор валют</h2>
+    <label for="rub">Сумма в рублях (RUB):</label>
+    <input type="number" id="rub" placeholder="Введите сумму в рублях">
+
+    <label for="eur">Сумма в евро (EUR):</label>
+    <input type="number" id="eur" placeholder="Введите сумму в евро">
+
+    <button id="convertBtn">Посчитать</button>
+    <div id="result"></div>
+  </div>
+
+  <div class="chart-container">
+    <h2>Динамика курса за последний месяц</h2>
+    <canvas id="rateChart" height="100"></canvas>
+    <div id="info" class="highlight" style="display:none;"></div>
+  </div>
+
+  <footer>
+    <div style="text-align:center; padding: 20px;">
+      <p><small>&copy; 2025 ПАО «SFI». Все права защищены. <a href="https://sfiholding.ru/" target="_blank">sfiholding.ru</a></small></p>
+    </div>
+  </footer>
+
+  <div class="side-menu">
+  <a href="company.html">Компания</a>
+  <a href="news.html">Новости</a>
+  <a href="exchange_rate.html" class="active">Курс валют</a>
+  <a href="Contact_data.html">Контакты</a>
+  <a href="video.html">Видео</a>
+</div>
+</body>
+</html>

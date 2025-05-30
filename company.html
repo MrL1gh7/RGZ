@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>О компании — SFI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon-16x16.png">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: grey;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0 240px 0 0; 
+      color: #333;
+    }
+
+    header, footer, .content-block {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1, h2 {
+      color: whitesmoke;
+    }
+
+    .logo {
+      display: block;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    .top-button {
+      border: 1px solid black;
+      position: fixed;
+      bottom: 20px;
+      right: 250px;
+      background-color: gray;
+      color: #fff;
+      padding: 12px 18px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 999;
+      transition: background-color 0.3s;
+    }
+
+    .top-button:hover {
+      background-color: rgb(170, 170, 11);
+    }
+
+    img {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    a {
+      color: rgb(248, 248, 8);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: whitesmoke;
+    }
+
+    .card-container {
+      margin: 40px 0;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: #f5f8fa;
+      border-left: 5px solid rgb(83, 81, 81);
+      border-radius: 8px;
+      padding: 20px 25px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      transition: background-color 0.3s;
+    }
+
+    .card:hover {
+      background-color: #e9f1f9;
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: rgb(39, 38, 38);
+      margin-bottom: 12px;
+    }
+
+    .card-content {
+      font-size: 16px;
+      color: #474545;
+    }
+
+    /* Меню */
+    .side-menu {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 220px;
+      height: 100%;
+      background-color: rgb(80, 78, 78);
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      padding-top: 20px;
+      box-shadow: -2px 0 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .side-menu a {
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    .side-menu a:hover {
+        background-color: rgb(170, 170, 11);
+    }
+    .side-menu .active {
+        background-color: rgb(190, 190, 10);
+    }
+    .content-block {
+      color: whitesmoke;
+      box-shadow:-2px 0 6px rgba(0,0,0,0.1) ;
+      border-left: 1px solid whitesmoke;
+    }
+
+    details {
+      margin-bottom: 12px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      padding: 8px 0;
+      outline: none;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    summary:before {
+      content: '▸';
+      display: inline-block;
+      margin-right: 8px;
+      transition: transform 0.2s;
+    }
+    details[open] summary:before {
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+<body>
+
+<a name="top"></a>
+
+<header>
+  <h1>О компании <em>«SFI»</em></h1>
+  <img class="logo" src="sfi-logo.png" alt="Логотип SFI">
+</header>
+
+<main>
+  <div class="content-block">
+    <h2>Направления деятельности</h2>
+    <p><strong>SFI</strong> — публичный диверсифицированный инвестиционный холдинг.</p>
+    <ul>
+      <li><u>Мы вкладываем средства в успешные компании, которые являются лидерами в своих сегментах рынка или могут стать ими с нашей помощью.</u></li>
+      <li><u>Объединяя компетенции, мы усиливаем бизнес и реализуем потенциал развития наших партнеров.</u></li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>Наши активы</h2>
+    <ul>
+      <li><u>Европлан. Лизинговый портфель: 256 млрд. ₽. Доля SFI: 87,5% </u></li>
+      <li><u>Страховой дом ВСК. Страховые сборы: 155,4 млрд. ₽. Доля SFI: 49% </u></li>
+      <li><u>М.ВидеоЭльдорадо. Общие продажи: 488,9 млрд. ₽. Доля SFI: 10,4% </u></li>
+    </ul>
+  </div>
+
+  <div>
+    <img style="display: block; margin: 20px auto;" src="Structure.PNG">
+  </div>
+
+  <div class="content-block">
+    <h2>История компании</h2>
+    <p><strong>Год основания:</strong> <em>2015 год</em></p>
+    <p>Холдинг SFI объединяет компании с большой историей. Единый корпоративный центр холдинга, объединяющий портфель финансовых активов, которые развивались до этого самостоятельно, 
+      появился в 2015 году. В 2017 году холдинг приобрел нынешнее название и структуру — из публичного акционерного общества была окончательно выделена операционная лизинговая 
+      компания «Европлан», а SFI сосредоточился на стратегическом управлении входящими в холдинг активами и развитии портфеля активов в целом.</u>.</p>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-title">Основные принципы инвестиционной политики:</div>
+      <div class="card-content">
+        <details>
+          <summary>1. Принципы инвестирования</summary>
+          <ul>
+            <li>SFI – стратегический инвестор.</li>
+            <li>Холдинг приобретает существенную миноритарную или контролирующую долю в капитале актива.</li>
+            <li>Горизонт инвестирования SFI – более трех лет.</li>
+            <li>Потенциал дивидендной доходности – одна из основных метрик оценки активов.</li>
+            <li>Инвестиции SFI направлены на устойчивый рост капитализации самого холдинга и его активов.</li>
+            <li>SFI разрабатывает стратегию привлечения сторонних инвесторов в капитал дочерних компаний.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>2. Отбор проектов для инвестирования</summary>
+          <ul>
+            <li>Объект инвестиций – развитый бизнес с историей положительных финансовых результатов и прогнозируемыми будущими доходами.</li>
+            <li>SFI инвестирует в эффективно управляемые компании и осуществляет контроль над издержками дочерних предприятий.</li>
+            <li>Объект для инвестиций полностью прозрачен и понятен для рынка в целом и холдинга в частности.</li>
+            <li>Важна синергия с другими портфельными активами.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>3. Управление активами</summary>
+          <ul>
+            <li>SFI активно участвует в стратегическом управлении активом через своих представителей в совете директоров.</li>
+            <li>В холдинге формируется команда менеджеров с оптимальными компетенциями для разработки стратегии развития актива и оценки эффективности его работы.</li>
+            <li>Холдинг проводит мониторинг возможностей снижения стоимости фондирования дочерних компаний.</li>
+            <li>SFI оказывает поддержку портфельным компаниям в привлечении рыночного финансирования.</li>
+            <li>При необходимости холдинг предоставляет денежные средства в соответствии со стратегией развития актива.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>4. Выход из активов</summary>
+          <ul>
+            <li>Непубличные компании холдинга: выход через вывод на IPO и/или продажу стратегическому партнеру.</li>
+            <li>Публичные компании холдинга: продажа пакета или части пакета при достижении целевого уровня оценки актива.</li>
+            <li>Растущий бизнес: поиск стратегического инвестора для достижения максимальной синергии, продажа доли или 100% актива.</li>
+          </ul>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card">
+      <div class="card-title">Корпоративное управление</div>
+      <div class="card-content">
+        <details>
+          <summary>1. Общее собрание акционеров</summary>
+          <p>Общее собрание акционеров является высшим органом управления SFI в соответствии с Федеральным законом от 26 декабря 1995 г. № 208-ФЗ «Об акционерных обществах» и Уставом SFI. Деятельность и компетенция Общего собрания акционеров регулируются законодательством Российской Федерации об акционерных обществах, положениями Устава и Положением о порядке созыва и проведения Общих собраний акционеров ПАО «ЭсЭфАй» (редакция № 3).</p>
+          <p>SFI стремится обеспечить максимальный уровень защиты прав акционеров на участие в управлении холдингом, голосование по вопросам повестки дня и получение прибыли в форме дивидендов.</p>
+        </details>
+        <details>
+          <summary>2. Совет директоров</summary>
+          <p>Совет директоров является ключевым органом системы корпоративного управления SFI. Основные цели: долгосрочное увеличение стоимости активов, защита прав и интересов акционеров и своевременность публичной информации. Состав Совета сформирован решением Общего собрания от 5 июня 2024 года.</p>
+        </details>
+        <details>
+          <summary>3. Комитеты Совета директоров</summary>
+          <ul>
+            <li>Комитет по аудиту и рискам</li>
+            <li>Комитет по вознаграждения и номинациям</li>
+          </ul>
+        </details>
+        <details>
+          <summary>4. Служба корпоративного секретаря</summary>
+          <p>Организует взаимодействие между акционерами, Советом директоров и другими участниками, обеспечивает соблюдение процедурных требований законодательства, Устава и внутренних документов SFI.</p>
+        </details>
+        <details>
+          <summary>5. Система внутреннего контроля</summary>
+          <p>СВК SFI — совокупность организационных мер и процедур для эффективного ведения бизнеса и соблюдения законодательства РФ. Эффективность проверяется ежегодно Службой внутреннего аудита и Ревизионной комиссией.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="content-block">
+    <h2>Завершённые проекты:</h2>
+    <p><strong>SFI</strong> владеет и управляет активами различных отраслей:</p>
+    <ul>
+      <li><u>Сафмар</u> Негосударственный пенсионный фонд</li>
+      <li><u>Моспромстрой-фонд</u> Негосударственный пенсионный фонд</li>
+      <li><u>РуссНефть</u> Компания по добыче нефти</li>
+      <li><u>ДиректКредит</u> Кредитный брокер</li>
+      <li><u>GFN.RU</u> Игровой сервис</li>
+    </ul>
+  </div>
+
+</main>
+
+<a href="#top" class="top-button">Наверх ↑</a>
+
+<footer>
+  <p><small>&copy; 2025 ПАО «SFI». Все права защищены. <a href="https://sfiholding.ru/" target="_blank">sfiholding.ru</a></small></p>
+</footer>
+<div class="side-menu">
+  <a href="company.html" class="active">Компания</a>
+  <a href="news.html">Новости</a>
+  <a href="exchange_rate.html">Курс валют</a>
+  <a href="Contact_data.html">Контакты</a>
+  <a href="video.html">Видео</a>
+</div>
+</body>
+</html>
